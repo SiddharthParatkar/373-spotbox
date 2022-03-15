@@ -50,9 +50,6 @@ function Navigation() {
             <Link to="/contact" className={classes.link}>
               Contact
             </Link>
-            <Link to="/faq" className={classes.link}>
-              FAQ
-            </Link>
           </div>
       </Toolbar>
     </AppBar>

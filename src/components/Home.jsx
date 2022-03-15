@@ -1,5 +1,11 @@
 import React from "react";
 
+const container = {
+  width: '70%',
+  alignItems: 'center',
+  paddingLeft: '10%'
+};
+
 function Home() {
   return (
     <div className="home">
@@ -12,7 +18,7 @@ function Home() {
               alt=""
             />
           </div>
-          <div class="col-lg-5">
+          <div class="col-lg-5" style={container}>
             <h1 class="font-weight-light">Home</h1>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting

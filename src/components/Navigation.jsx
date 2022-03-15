@@ -15,7 +15,6 @@ const useStyles = makeStyles((theme) => ({
   },
  logo: {
     flexGrow: "1",
-    cursor: "pointer",
   },
   link: {
     textDecoration: "none",

@@ -2,7 +2,6 @@ import React from "react";
 
 const container = {
   width: '70%',
-  // display: 'flex',
   alignItems: 'center',
   paddingLeft: '10%'
 };

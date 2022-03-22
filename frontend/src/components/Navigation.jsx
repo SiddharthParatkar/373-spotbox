@@ -23,13 +23,13 @@ function Navigation() {
         </Typography>
           <div className="navlinks">
             <Link to="/" className="navlink">
-              Home
+              Find Spotboxes
             </Link>
             <Link to="/about" className="navlink">
-              About
+              About Spotboxes
             </Link>
             <Link to="/contact" className="navlink">
-              Contact
+              Contact Us!
             </Link>
           </div>
       </Toolbar>

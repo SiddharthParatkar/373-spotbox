@@ -1,5 +1,12 @@
 import React from "react";
 
+const container = {
+  width: '70%',
+  // display: 'flex',
+  alignItems: 'center',
+  paddingLeft: '10%'
+};
+
 function Contact() {
   return (
     <div className="contact">
@@ -12,7 +19,7 @@ function Contact() {
               alt=""
             />
           </div>
-          <div class="col-lg-5">
+          <div class="col-lg-5" style = {container}>
             <h1 class="font-weight-light">Contact</h1>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting

@@ -36,3 +36,7 @@
     transform: rotate(360deg);
   }
 }
+
+:root {
+  --spotbox-yellow: rgba(237,199,38,255);
+}

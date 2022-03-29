@@ -15,7 +15,7 @@ function Navigation() {
 
   return (
     // Change the color here to change the navigation bar's color, should be an RBG value in hexadecimal
-    <AppBar style={{ background: '#2E3B55' }} position="static">
+    <AppBar position="static" className="nav">
       <CssBaseline />
       <Toolbar>
         <Typography variant="h4" className="logo">

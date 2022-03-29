@@ -1,4 +1,5 @@
 import React from "react";
+import "./About.css"
 
 const container = {
   width: '70%',
@@ -19,12 +20,9 @@ function About() {
             />
           </div>
           <div class="col-lg-5" style={container}>
-            <h1 class="font-weight-light">About Spotboxes</h1>
+            <h1 class="font-weight-light title">About Spotboxes</h1>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
+              The Spotbox Initiative was started in Kodiak, Alaska during the Covid-19 lockdown by a team of teachers, determined to get students out of the house and into nature.<br /><br />
             </p>
           </div>
         </div>

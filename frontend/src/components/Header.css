@@ -17,6 +17,10 @@
   margin-left: 20px;
 }
 
+.navlink:hover{
+  border-bottom: 5px solid yellow;
+}
+
 .nav {
   background-color: #2E3B55 !important;
 }

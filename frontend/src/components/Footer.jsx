@@ -5,7 +5,8 @@ import "./Footer.css"
 //   width: '70%',
 //   // display: 'flex',
 //   alignItems: 'center',
-//   paddingLeft: '10%'
+//   paddingLeft: '10%',
+  
 // };
 
 function Footer() {

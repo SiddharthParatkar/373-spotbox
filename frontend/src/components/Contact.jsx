@@ -22,9 +22,9 @@ function Contact() {
           <div class="col-lg-5" style = {container}>
             <h1 class="font-weight-light">Contact</h1>
             <p>
-              Find us below!
+              Find us below!<br/>
 
-              Twitter Group (TODO ADD HYPERLINK)
+              Twitter Group (TODO ADD HYPERLINK)<br/>
 
               Insert other contacts here
             </p>

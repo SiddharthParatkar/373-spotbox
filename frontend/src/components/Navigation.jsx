@@ -8,12 +8,9 @@ import {
   Typography
 } from "@mui/material";
 
-import { Link } from "react-router-dom";
-
-
+import {NavLink} from "react-router-dom"; 
 
 function Navigation() {
-
   return (
     // Change the color here to change the navigation bar's color, should be an RBG value in hexadecimal
     <AppBar position="static" className="nav">
@@ -23,15 +20,15 @@ function Navigation() {
           Spotbox Program
         </Typography>
           <div className="navlinks">
-            <Link to="/" className="navlink">
+            <NavLink to="/home" className="navlink">
               Find Spotboxes
-            </Link>
-            <Link to="/about" className="navlink">
+            </NavLink>
+            <NavLink to="/about" className="navlink">
               About Spotboxes
-            </Link>
-            <Link to="/contact" className="navlink">
+            </NavLink>
+            <NavLink to="/contact" className="navlink">
               Contact Us!
-            </Link>
+            </NavLink>
           </div>
       </Toolbar>
     </AppBar>

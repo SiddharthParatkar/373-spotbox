@@ -17,7 +17,11 @@
   margin-left: 20px;
 }
 
-.navlink:hover{
+.navlink:hover {
+  border-bottom: 5px solid yellow;
+}
+
+.navlink.active {
   border-bottom: 5px solid yellow;
 }
 

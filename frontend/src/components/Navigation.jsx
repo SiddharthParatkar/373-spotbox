@@ -19,7 +19,7 @@ function Navigation() {
       <CssBaseline />
       <Toolbar>
         <Typography variant="h4" className="logo">
-          Spotbox Program
+          Spotbox.info
         </Typography>
           <div className="navlinks">
             <Link to="/" className="navlink">

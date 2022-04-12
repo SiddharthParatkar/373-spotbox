@@ -1,11 +1,12 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
+require('dotenv').config({ path: './secret.env' });
 
 const {getTwitterUserData} = require("./endpoints/twitter_endpoints");
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT;
 
 app.use(cors());
 app.use(bodyParser.json());

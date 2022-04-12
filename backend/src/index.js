@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 
 //TODO: Add documentation for api (like what is request/response loop)
 app.post('/twitter-user', (request, response) => {
-  getTwitterUserData();
+  getTwitterUserData("MSobkov");
 })
 
 app.listen(port, () => {

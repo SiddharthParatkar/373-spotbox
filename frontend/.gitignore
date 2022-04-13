@@ -1,3 +1,5 @@
-#The gitignore is a file to tell git to ignore everything listed. Since node_modules
+# The gitignore is a file to tell git to ignore everything listed. 
+# Since node_modules will constantly try to put new files in to git, this file tells git to not include those files when putting them
+# into the repository
 node_modules
 package-lock.json

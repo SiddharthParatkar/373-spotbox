@@ -1,0 +1,6 @@
+#Backend Intro
+You may have heard the term 'webapp' being used interchangably with 'website' or may have never heard the term before. A website is everything you find in the frontend folder, but the prescence of this backend qualifies the site as a webapp. This is because the backend gives a site functionality beyond what it could do on it's own. Tradtionally this is done through APIs and working with a database. 
+
+An API (Application Programable Interface) is how websites talk to eachother. For an understanding of how this works, check out [this short video](https://www.youtube.com/watch?v=s7wmiS2mSXY)
+
+A database is some way to store data. There are many different philosophies and paradigms to do this. For example, we use MongoDB in this project, which is in a category of databases called NoSQL which diverges from a traditional database structure. Traditionally, databases have very strict rules which is usefull when you have very consistent data, for example, think about Tshirts. They all have a size, a brand, and a primary color. Other things are not so straight forward, like specific birds and features they might have. There's are general features and notes that can apply to some, but not others. As a result, this is data that works well for a NoSQL database.

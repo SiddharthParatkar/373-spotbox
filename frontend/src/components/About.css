@@ -6,11 +6,10 @@
 }
 
 .about {
-  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.1);
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.15);
   background-image: url(../../public/landing_page_background3.jpg);
   background-size: cover;
-  color: yellow;
-  /* height: 1000px; */
+  color: var(--spotbox-yellow);
   height: 93vh;
   font-family: 'Helvetica';
 }
@@ -36,4 +35,11 @@
 
 .about p {
   font-size: 1.75em;
+}
+
+.about a {
+  color: white;
+  text-decoration-line: underline;
+  text-decoration-color: var(--spotbox-yellow);
+  font-size: 1.2em;
 }

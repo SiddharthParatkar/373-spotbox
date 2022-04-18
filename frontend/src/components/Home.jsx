@@ -1,4 +1,5 @@
 import React from "react";
+import "./Home.css"
 
 const container = {
   width: '70%',
@@ -21,10 +22,8 @@ function Home() {
           <div class="col-lg-5" style = {container}>
             <h1 class="font-weight-light">Find Spotboxes</h1>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
+              <iframe title="kodiak" src="https://arcgis.com/apps/mapviewer/index.html?webmap=7ac10f34ad03485184c78394afd15202">
+              </iframe>
             </p>
           </div>
         </div>

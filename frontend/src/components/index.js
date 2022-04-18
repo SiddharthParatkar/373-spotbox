@@ -1,3 +1,7 @@
+/*
+    The index.js file sets up the routing used throughout the App.
+*/
+
 export { default as Navigation } from "./Navigation";
 export { default as Footer } from "./Footer";
 export { default as Home } from "./Home";

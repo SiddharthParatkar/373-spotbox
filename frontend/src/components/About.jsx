@@ -1,6 +1,9 @@
 import React from "react";
 import "./About.css"
 
+/*
+  You can add basic CSS to classes in your .jsx files as well.
+*/
 const container = {
   width: '70%',
   alignItems: 'center',

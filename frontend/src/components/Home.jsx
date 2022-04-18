@@ -22,6 +22,7 @@ function Home() {
           <div class="col-lg-5" style = {container}>
             <h1 class="font-weight-light">Find Spotboxes</h1>
             <p>
+              {/* This iframe is displaying the map based on the link provided. */}
               <iframe title="kodiak" src="https://www.arcgis.com/home/webmap/viewer.html?webmap=76da1f90f78e42c5a573456af6c8fbb0">
               </iframe>
             </p>

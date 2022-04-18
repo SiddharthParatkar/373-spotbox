@@ -1,14 +1,6 @@
 import React from "react";
 import "./Footer.css"
 
-// const container = {
-//   width: '70%',
-//   // display: 'flex',
-//   alignItems: 'center',
-//   paddingLeft: '10%',
-  
-// };
-
 function Footer() {
   return (
     <div className="footer">

@@ -1,5 +1,8 @@
 @import url("../App.css"); 
 
+/* 
+  This is a react package that lets you set the fonts used in your App.
+*/
 @font-face {
   font-family: 'Helvetica';
   src: local('Helvetica'), url(~/public/fonts/Helvetica.ttf) format('truetype');
@@ -10,7 +13,7 @@
   background-image: url(../../public/landing_page_background3.jpg);
   background-size: cover;
   color: var(--spotbox-yellow);
-  height: 93vh;
+  height:89vh;
   font-family: 'Helvetica';
 }
 
@@ -27,6 +30,10 @@
   text-shadow: 2px 2px black;
 }
 
+/* 
+  This selector is looking for a tag called h1 inside 
+  of a class called about.
+*/
 .about h1 {
   font-size: 3em;
   text-decoration-line: underline;

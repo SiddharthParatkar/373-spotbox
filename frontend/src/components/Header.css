@@ -17,10 +17,18 @@
   margin-left: 20px;
 }
 
+/*
+  This is indicating that when you are hovering over the links 
+  in the navigation bar, these styles will be visible on the page.
+*/
 .navlink:hover {
   border-bottom: 5px solid yellow;
 }
 
+/*
+  This is indicating that when this link is active in the header, 
+  these styles will be visible on the page.
+*/
 .navlink.active {
   border-bottom: 5px solid yellow;
 }

@@ -19,6 +19,10 @@ function App() {
   );
 }
 
+/* 
+  This is where the routing of the entire app takes place. 
+  Note how the NavLinks from Navigation.jsx route to the same paths as these routes. 
+*/
 ReactDOM.render(
   <Router>
     <Routes>

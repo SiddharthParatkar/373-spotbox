@@ -11,7 +11,7 @@
   background-size: cover;
   color: yellow;
   /* height: 1000px; */
-  height: 93vh;
+  height: 89vh;
   font-family: 'Helvetica';
 }
 
@@ -38,7 +38,28 @@
   font-size: 1.75em;
 }
 
-.home iframe {
+/* .home iframe {
   width: 140vh;
   height: 70vh;
+} */
+
+embed-container {
+  position: relative; 
+  padding-bottom: 80%; 
+  height: 0; 
+  max-width: 100%;
+} 
+.embed-container iframe, .embed-container object, .embed-container iframe {
+  position: absolute; 
+  top: 20vh; 
+  left: 17.5vh; 
+  width: 70%; 
+  height: 70%;
+} 
+
+small {
+  position: absolute; 
+  z-index: 40; 
+  bottom: 0; 
+  margin-bottom: -15px;
 }

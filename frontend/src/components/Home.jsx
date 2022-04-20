@@ -19,11 +19,15 @@ function Home() {
               alt=""
             />
           </div>
-          <div class="col-lg-5" style = {container}>
+          <div class="col-lg-5" style={container}>
             <h1 class="font-weight-light">Find Spotboxes</h1>
             <p>
-              <iframe title="kodiak" src="https://arcgis.com/apps/mapviewer/index.html?webmap=7ac10f34ad03485184c78394afd15202">
-              </iframe>
+              {/* This iframe is displaying the map based on the link provided. */}
+              <div class="embed-container">
+                <iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="Spotboxes in service" src="//www.arcgis.com/apps/Embed/index.html?webmap=76da1f90f78e42c5a573456af6c8fbb0&extent=-152.55,57.7531,-152.2109,57.8607&zoom=true&previewImage=false&scale=true&disable_scroll=true&theme=light">
+
+                </iframe>
+              </div>
             </p>
           </div>
         </div>

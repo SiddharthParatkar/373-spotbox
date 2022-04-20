@@ -19,6 +19,9 @@ function Navigation() {
         <Typography variant="h4" className="logo">
           Spotbox.info
         </Typography>
+          {/* These are all the navigation links that allow the routing to take place. 
+          NavLink is used over Link because it interacts minimally with the React Router, 
+          and allows for the .navlinks.active property to be used. */}
           <div className="navlinks">
             <NavLink to="/home" className="navlink">
               Find Spotboxes

@@ -13,3 +13,7 @@ MaterialUI, now commonly referred to as "MUI" is a REACT framework. This may see
 ## Basic Web Technologies
 
 Fundamentally, behind all of the above, there are 3 languages: HTML (HyperText Markup Language), CSS (Cascading Style Sheets), and JavaScript (no relation to Java in any way that matters). The common analogy used for these is if a website is a sentence, the HTML is the nouns (determining what content is on the website), JavaScript is the verbs (what the HTML/nouns are doing), and CSS is the adjectives (how the nouns are decorated). There are really great resources on the web to get up to speed, we recommend [this one](https://www.codecademy.com/catalog/language/html-css).
+
+## ReactRouterDOM
+
+ReactRouterDOM is an npm (Node package manager; basically a way to organize extra libraries that are being added to your project) package that allows you to set up routing in between various URLs of your single page application. Note that we are working with a single page application here; we have different tabs to go to, but the entire page is never reloaded. When we view the website for the first time, all the information is loaded at once, and we just dynamically change what's visible with the navigation bar. To learn more about this, see the documentation [here]().

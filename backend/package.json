@@ -21,6 +21,7 @@
     "oauth": "^0.9.15",
     "passport": "^0.5.2",
     "passport-twitter": "^1.0.4",
+    "pkce-challenge": "^3.0.0",
     "twitter-oauth2": "^1.0.5"
   }
 }

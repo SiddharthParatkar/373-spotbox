@@ -1,6 +1,6 @@
 import React from "react";
+import axios from "axios";
 import "./Header.css"
-
 import {
   AppBar,
   Toolbar,
@@ -9,8 +9,31 @@ import {
 } from "@mui/material";
 
 import {NavLink} from "react-router-dom"; 
+import {TwitterLoginButton} from "react-social-login-buttons";
+
 
 function Navigation() {
+  function loginWithTwitter() {
+    axios.get("http://localhost:3002/")
+      .then((response) => {
+        window.location.href=response.data;
+      })
+  }
+
+  function checkQueryParams() {
+    return false;
+  }
+
+  function LoggedInOption(isLoggedIn){
+    if(isLoggedIn) {
+      return null;
+    } else {
+      return <TwitterLoginButton className="navlink" onClick={loginWithTwitter} />
+    }
+  }
+
+  const isLoggedIn = checkQueryParams();
+
   return (
     // Change the color here to change the navigation bar's color, should be an RBG value in hexadecimal
     <AppBar position="static" className="nav">
@@ -23,6 +46,7 @@ function Navigation() {
           NavLink is used over Link because it interacts minimally with the React Router, 
           and allows for the .navlinks.active property to be used. */}
           <div className="navlinks">
+            {LoggedInOption(isLoggedIn)}
             <NavLink to="/home" className="navlink">
               Find Spotboxes
             </NavLink>

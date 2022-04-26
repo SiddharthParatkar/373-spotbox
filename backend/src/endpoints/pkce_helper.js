@@ -1,6 +1,7 @@
 const pkceChallenge = require("pkce-challenge").default;
 require('dotenv').config({ path: './secret.env' });
 
+//Relevant Documentation: https://developer.twitter.com/en/docs/authentication/oauth-2-0/user-access-token
 function pkceURLBuilder(req, res) {
   //PKCE challenge is used here as a security measure. 
   const codeChallenge = pkceChallenge(128);
@@ -9,7 +10,7 @@ function pkceURLBuilder(req, res) {
   let queryParams = [`client_id=${process.env.TWITTER_CLIENT_ID}`];
   queryParams.push(`code_challenge=${codeChallenge.code_challenge}`);
   // queryParams.push(`code_verifier=${codeChallenge.code_verifier}`);
-  queryParams.push(`redirect_uri=https://www.example.com`);
+  queryParams.push(`redirect_uri=http://localhost:3000/home`);
   queryParams.push(`code_challenge_method=S256`);
   queryParams.push(`response_type=code`);
   queryParams.push('state=state');

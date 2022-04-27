@@ -9,8 +9,7 @@ function pkceURLBuilder(req, res) {
 
   let queryParams = [`client_id=${process.env.TWITTER_CLIENT_ID}`];
   queryParams.push(`code_challenge=${codeChallenge.code_challenge}`);
-  // queryParams.push(`code_verifier=${codeChallenge.code_verifier}`);
-  queryParams.push(`redirect_uri=http://localhost:3000/home`);
+  queryParams.push(`redirect_uri=http://localhost:3000`);
   queryParams.push(`code_challenge_method=S256`);
   queryParams.push(`response_type=code`);
   queryParams.push('state=state');
@@ -19,7 +18,7 @@ function pkceURLBuilder(req, res) {
   // ASCII Table. https://commons.wikimedia.org/wiki/File:ASCII-Table-wide.svg
   queryParams.push(`scope=offline.access%20users.read%20follows.read%20like.read`);
   const url = domain + "?" + queryParams.join('&');
-  res.send(url);
+  res.send({url:url, verifier:codeChallenge.code_verifier});
 }
 
 exports.pkceURLBuilder = pkceURLBuilder

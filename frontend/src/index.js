@@ -10,6 +10,8 @@ import {
   Contact,
 } from "./components";
 
+import axios from "axios";
+
 function App() {
   return (
     <div>

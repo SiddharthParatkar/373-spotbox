@@ -18,8 +18,16 @@ class Navigation extends React.Component {
   }
 
   componentDidMount() {
-    console.log("on Mount");
-    console.log(this.props.location.search);
+   
+    // This line pulls the url and then breaks it up into two pieces [0] contains 
+    // everything before code= in the url and [1] contains everything after which
+    // is just the code to send back to the server to verify.
+    const code = window.location.href.split('code=')[1];
+    if (code !== undefined) {
+      this.setState({isLoggedIn:true});
+    }
+    const data = {code: code}
+    axios.post("http://localhost:3002/code", data);
   }
 
   render() { 
@@ -30,17 +38,14 @@ class Navigation extends React.Component {
         })
     }
   
-    function LoggedInOption(){
-      console.log(this.props);
-      console.log(this.state)
-      if(this.props.isLoggedIn) {
+    function LoggedInOption(state){
+      if(state.isLoggedIn === true) {
         return null;
       } else {
         return <TwitterLoginButton className="navlink" onClick={loginWithTwitter} />
       }
     }
   
-    // const isLoggedIn = checkQueryParams();
     return (
       // Change the color here to change the navigation bar's color, should be an RBG value in hexadecimal
       <AppBar position="static" className="nav">
@@ -53,7 +58,7 @@ class Navigation extends React.Component {
             NavLink is used over Link because it interacts minimally with the React Router, 
             and allows for the .navlinks.active property to be used. */}
             <div className="navlinks">
-              {LoggedInOption()}
+              {LoggedInOption(this.state)}
               <NavLink to="/home" className="navlink">
                 Find Spotboxes
               </NavLink>

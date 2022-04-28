@@ -25,7 +25,7 @@ function App() {
     // const data = {code: code}
     // axios.post("http://localhost:3002/code", data);
   },[loggedIn]);
-
+  console.log(loggedIn);
   return (
     <div>
       <Navigation loggedIn={loggedIn}/>

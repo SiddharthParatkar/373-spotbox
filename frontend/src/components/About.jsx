@@ -27,7 +27,7 @@ function About() {
             <p>
               The Spotbox Initiative was started in Kodiak, Alaska during the Covid-19 lockdown by a team of teachers, determined to get students out of the house and into nature.<br /><br />
               Historically, the boxes have contained information and activites relevant to their locations to encourage learning about the area while actually there! <br /><br /> 
-              If you would like to explore our initiative further, check out our <a href="https://www.twitter.com"> network of users </a> or find a Spotbox near you!
+              If you would like to explore our initiative further, check out our <a href="https://twitter.com/i/communities/1461804833078349828"> network of users </a> or find a Spotbox near you!
             </p>
           </div>
         </div>
